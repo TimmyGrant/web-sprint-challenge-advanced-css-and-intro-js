@@ -293,20 +293,29 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
 At the end, this function should return the new array with information added"*/
-let newwArtist = [...artists]
-let newObj = {
-  id: 20,
-  name: "timmy grant",
-  years: "1989",
-  genre: "web Design",
-  nationality: "american",
-  bio: "lorem ipsum slkdfjlskdjf;lksjdf;lksjdflkjsdj;flkjs;dlkfjj;lsdkjfj;lksdjf;lksjdf;lkajj;kdlfjalkdjf;alksdjf;lakjsdf;"
-}
-function addArtist(array){
-    newwArtist.push(newObj);
-    return newwArtist;
+// let newwArtists = [...artists]
+// let newObj = {
+//   id: 20,
+//   name: "timmy grant",
+//   years: "1989",
+//   genre: "web Design",
+//   nationality: "american",
+//   bio: "lorem ipsum slkdfjlskdjf;lksjdf;lksjdflkjsdj;flkjs;dlkfjj;lsdkjfj;lksdjf;lksjdf;lkajj;kdlfjalkdjf;alksdjf;lakjsdf;"
+// }
+// function addArtist(array){
+//     newwArtists.push(newObj);
+//     return newwArtists;
+//   }
+
+function addArtist(artists, id, name, years, genre, nationality, bio){
+  artists.push({id, name, years, genre, nationality, bio});
+  return artists;
   }
-console.log(addArtist(artists));
+
+  console.log(addArtist(artists, "21", "Timmy", "1889-NA", "Death Metal", "Mut", "Love making music!"));
+  
+// console.log(addArtist(newwArtists));
+// console.log(addArtist(artists));
 
   
 
